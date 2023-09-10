@@ -1,31 +1,15 @@
-.container {
-    animation: transitionIn 0.75s;
-}
-
 @keyframes transitionIn {
     from {
         opacity: 0;
         transform: rotateX(-10deg)
     }
+
     to {
         opacity: 1;
         transform: rotateX(0)
     }
 }
 
-.ecarousel {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
+.container {
+    animation: transitionIn 1s;
 }
-
-.item {
-    flex: 0 0 auto;
-    margin-right: 20px; /* Adjust as needed */
-}
-
-nav .navbar-nav li a{
-    font-weight: bold;
-    font-size:150%;
-    color: white !important;
-  }
