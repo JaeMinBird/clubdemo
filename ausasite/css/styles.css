@@ -13,3 +13,7 @@
 .container {
     animation: transitionIn 1s;
 }
+
+.customcon {
+    max-width: 960px;
+}
