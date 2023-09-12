@@ -82,3 +82,26 @@
     animation: fadeUp 0.75s;
     visibility: visible;
 }
+
+.square-card {
+    width: 100%;
+    padding-top: calc(9/15 *100%);
+    position: relative;
+    overflow:hidden;
+  }
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text-bottom {
+    position: absolute;
+    bottom: 4%;
+    left: 5%;
+    width: 100%;
+}
