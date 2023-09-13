@@ -233,3 +233,9 @@
       font-size:120% !important;
     }
 }
+
+.nav-item {
+    align-items: center !important;
+    justify-content: center !important;
+    text-align:center !important;
+}
