@@ -1,3 +1,4 @@
+/*animations */
 @keyframes transitionIn {
     from {
         opacity: 0;
@@ -34,6 +35,16 @@
     }
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/*general*/
 .container {
     animation: transitionIn 1s;
 }
@@ -42,6 +53,11 @@
     animation: fadeDown .5s;
 }
 
+.nav-item {
+    font-size: larger !important;
+}
+
+/*about*/
 .membershipcon {
     animation: fadeUp .75s;
 }
@@ -50,10 +66,7 @@
     max-width: 960px;
 }
 
-.nav-item {
-    font-size: larger !important;
-}
-
+/*membership*/
 .card-body {
     padding-top: 14px;
     padding-bottom:14px;
@@ -74,13 +87,33 @@
     height: 100%;
 }
 
+/*sponsors*/
 .stext {
     visibility:hidden;
+    position:absolute;
+    text-align:center;
+    align-items:center;
+    top:20%;
+    color:rgb(255, 255, 255);
 }
 
 .scard:hover .stext {
     animation: fadeUp 0.75s;
     visibility: visible;
+}
+
+.scard:hover .stextbacker {
+    animation: fadeUp 0.75s;
+    visibility: visible;
+}
+
+.scard:hover .ctextbacker {
+    animation: fadeIn 1s;
+    visibility: visible;
+}
+
+.scard:hover .blur {
+    filter:blur(5px);
 }
 
 .square-card {
@@ -104,4 +137,85 @@
     bottom: 4%;
     left: 5%;
     width: 100%;
+}
+
+.ctextbacker {
+    position: absolute;
+    bottom: 4.3%;
+    left: 5.5%;
+    width: 100%;
+    size-adjust:var(10%);
+    color:rgb(0, 0, 0);
+    visibility:hidden;
+    opacity:75%;
+}
+
+.stextbacker {
+    position: absolute;
+    visibility:hidden;
+    text-align:center;
+    align-items:center;
+    top:20.5%;
+    opacity:75%;
+    color:rgb(0, 0, 0);
+}
+
+.blur {
+    filter: blur(1px);
+}
+
+@media screen and (max-width: 425px) {
+    .stext {
+      top:15%;
+      font-size:120%;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    .stext {
+      top:15%;
+      font-size:100%;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .stext {
+      top:15%;
+      font-size:80%;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .stext {
+      top:15%;
+      font-size:65%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .stextbacker {
+      top:15.5%;
+      font-size:120%;
+    }
+}
+
+@media screen and (max-width: 386px) {
+    .stextbacker {
+      top:15.5%;
+      font-size:100%;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    .stextbacker {
+      top:15%;
+      font-size:80%;
+    }
+}
+
+@media screen and (max-width: 285px) {
+    .stextbacker {
+      top:15.5%;
+      font-size:65%;
+    }
 }
