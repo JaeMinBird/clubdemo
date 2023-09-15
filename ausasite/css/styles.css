@@ -55,6 +55,9 @@
 
 .nav-item {
     font-size: larger !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align:center !important;
 }
 
 /*about*/
@@ -235,8 +238,18 @@
     }
 }
 
-.nav-item {
-    align-items: center !important;
-    justify-content: center !important;
-    text-align:center !important;
+/* contact */
+.socialcard {
+    width: 100%;
+    padding-top: calc(12 / 9 * 100%);
+    position:relative;
+}
+
+.socialimg {
+    position:absolute;
+    top:0;
+    left:0;
+    object-fit:cover;
+    width:100%;
+    height:100%;
 }
