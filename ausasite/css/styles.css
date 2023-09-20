@@ -23,6 +23,18 @@
     }
 }
 
+@keyframes fadeleft {
+    from {
+        opacity: 0;
+        transform: translate(0%, -50%) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(1);
+    }
+}
+
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -87,19 +99,26 @@
     visibility:hidden;
     position:absolute;
     text-align:center;
-    align-items:center;
-    top:15%;
-    color:rgb(255, 255, 255);
+    top: 50%;
+    left:50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color:rgb(0, 0, 0);
+}
+
+.scard {
+    aspect-ratio: 16/9;
+    object-fit:cover;
+    overflow:hidden;
 }
 
 .scard:hover .stext {
-    animation: fadeUp 0.75s;
+    animation: fadeleft 0.75s;
     visibility: visible;
 }
 
 .scard:hover .stextbacker {
     animation: fadeUp 0.75s;
-    visibility: visible;
 }
 
 .scard:hover .ctextbacker {
@@ -108,7 +127,8 @@
 }
 
 .scard:hover .blur {
-    filter:blur(5px);
+    filter:blur(9px);
+    transition:.75s;
 }
 
 .square-card {
@@ -231,9 +251,7 @@
 
 /* contact */
 .socialcard {
-    width: 100%;
-    padding-top: calc(1/1 * 100%);
-    position:relative;
+    aspect-ratio: 1/1;
 }
 
 .sociallog {
