@@ -26,12 +26,12 @@
 @keyframes fadeleft {
     from {
         opacity: 0;
-        transform: translate(0%, -50%) scale(0.9);
+        transform: translate(0%, -60%) scale(0.9);
     }
 
     to {
         opacity: 1;
-        transform: translate(-50%,-50%) scale(1);
+        transform: translate(-50%,-60%) scale(1);
     }
 }
 
@@ -99,11 +99,15 @@
     visibility:hidden;
     position:absolute;
     text-align:center;
-    top: 50%;
+    top: 45%;
     left:50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color:rgb(0, 0, 0);
+    -ms-transform: translate(-50%, -60%);
+    transform: translate(-50%, -60%);
+    color:rgb(255, 255, 255);
+    width:85%;
+    text-shadow:
+        1px 1px 0 #000,  /* Bottom left */
+        1px 1px 0 #000;   /* Bottom right */
 }
 
 .scard {
@@ -115,10 +119,6 @@
 .scard:hover .stext {
     animation: fadeleft 0.75s;
     visibility: visible;
-}
-
-.scard:hover .stextbacker {
-    animation: fadeUp 0.75s;
 }
 
 .scard:hover .ctextbacker {
@@ -165,72 +165,30 @@
     opacity:75%;
 }
 
-.stextbacker {
-    position: absolute;
-    visibility:hidden;
-    text-align:center;
-    align-items:center;
-    top:15.5%;
-    opacity:100%;
-    color:rgb(0, 0, 0);
-}
-
 .blur {
     filter: blur(1px);
 }
 
 @media screen and (max-width: 425px) {
     .stext {
-      top:10%;
       font-size:120%;
     }
 }
 
 @media screen and (max-width: 386px) {
     .stext {
-      top:10%;
       font-size:100%;
     }
 }
 
 @media screen and (max-width: 335px) {
     .stext {
-      top:10%;
       font-size:80%;
     }
 }
 
 @media screen and (max-width: 285px) {
     .stext {
-      top:10%;
-      font-size:65%;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .stextbacker {
-      top:10.5%;
-      font-size:120%;
-    }
-}
-
-@media screen and (max-width: 386px) {
-    .stextbacker {
-      top:10.5%;
-      font-size:100%;
-    }
-}
-
-@media screen and (max-width: 335px) {
-    .stextbacker {
-      top:10.5%;
-      font-size:80%;
-    }
-}
-
-@media screen and (max-width: 285px) {
-    .stextbacker {
-      top:10.5%;
       font-size:65%;
     }
 }
