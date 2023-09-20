@@ -219,6 +219,8 @@
     transform: translate(-50%, -50%);
     fill:white;
     color:white;
+    width:30%;
+    height:30%;
 }
 
 .sociallink {
