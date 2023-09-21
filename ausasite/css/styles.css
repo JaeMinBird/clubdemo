@@ -252,11 +252,6 @@ left: 8px;
     max-width: 960px;
 }
 
-/*membership*/
-.card-body {
-    padding-top: 14px;
-    padding-bottom:14px;
-}
 
 .card-img {
     position: relative;
@@ -264,6 +259,8 @@ left: 8px;
     object-fit:cover;
     overflow:hidden;
 }
+
+/*membership*/
 
 /*sponsors*/
 .stext {
