@@ -63,6 +63,17 @@
 
 .jumbo {
     animation: fadeDown .5s;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumboimg {
+    width: auto;
+    object-fit:cover;
 }
 
 .nav-item {
