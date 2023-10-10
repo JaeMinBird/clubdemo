@@ -86,20 +86,14 @@
 .hidden {
     opacity:0;
     filter: blur(5px);
-    transform: translateY(+10%);
-    transition: 1s;
+    transform: translateY(+50%);
+    transition: .75s;
 }
 
 .show {
     opacity: 1;
     filter:blur(0);
     transform: translateY(0);
-}
-
-@media screen and (max-width: 800px) {
-    .hidden {
-        transform: translateY(-1%);
-    }
 }
 
 /*navbar icon*/
