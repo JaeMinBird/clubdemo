@@ -287,6 +287,13 @@ left: 8px;
     max-width: 960px;
 }
 
+.horiflip {
+    transform: scaleX(-1);
+}
+
+.bamboo {
+    opacity: 1;
+}
 
 .card-img {
     position: relative;
