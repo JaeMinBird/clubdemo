@@ -96,6 +96,17 @@
     transform: translateY(0);
 }
 
+.footie {
+    align-items: normal;
+}
+
+@media screen and (max-width: 338px) {
+    .footie {
+      align-items:center !important;
+      justify-content: center !important;
+    }
+}
+
 /*navbar icon*/
 
 .animated-icon1,
