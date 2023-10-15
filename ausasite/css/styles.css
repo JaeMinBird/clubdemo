@@ -302,6 +302,7 @@ left: 8px;
     animation:fadeUp linear both;
     animation-timeline:view();
     animation-range: entry 25% cover 35%;
+    animation-duration:1ms;
 }
 
 .horiflip {
@@ -313,6 +314,7 @@ left: 8px;
     animation: slideIn linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 50%;
+    animation-duration:1ms;
 }
 
 .card-img {
