@@ -1,3 +1,4 @@
+//remove bamboo on smaller windows
 const elementsToRemove = document.querySelectorAll('.bamboo');
 
 function removeElementsIfWidthBelowThreshold() {
@@ -11,7 +12,6 @@ function removeElementsIfWidthBelowThreshold() {
 // Call the function initially and add an event listener to handle window resizing
 removeElementsIfWidthBelowThreshold();
 window.addEventListener('resize', removeElementsIfWidthBelowThreshold);
-
 
 
 //parallax for eboard cards

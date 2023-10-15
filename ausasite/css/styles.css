@@ -59,7 +59,7 @@
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateX(-25%)
+        transform: translateX(-50%)
     }
     100% {
         opacity: 1;
@@ -299,9 +299,9 @@ left: 8px;
 }
 
 .abtpar {
-    animation:fadeUp linear;
+    animation:fadeUp linear both;
     animation-timeline:view();
-    animation-range: entry 15% cover 35%;
+    animation-range: entry 25% cover 35%;
 }
 
 .horiflip {
@@ -310,7 +310,7 @@ left: 8px;
 
 .bamboo {
     opacity: 1;
-    animation: slideIn linear;
+    animation: slideIn linear both;
     animation-timeline: view();
     animation-range: entry 10% cover 50%;
 }
