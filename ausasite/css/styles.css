@@ -56,6 +56,17 @@
      }
 }
 
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-25%)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%)
+    }
+}
+
 /*general*/
 .container {
     animation: transitionIn 1s;
@@ -287,13 +298,21 @@ left: 8px;
     max-width: 960px;
 }
 
+.abtpar {
+    animation:fadeUp linear;
+    animation-timeline:view();
+    animation-range: entry 15% cover 35%;
+}
+
 .horiflip {
     transform: scaleX(-1);
 }
 
 .bamboo {
     opacity: 1;
-    animation: fadeUp .75s;
+    animation: slideIn linear;
+    animation-timeline: view();
+    animation-range: entry 10% cover 50%;
 }
 
 .card-img {
