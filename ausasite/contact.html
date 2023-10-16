@@ -123,14 +123,14 @@
             <p class="col-lg-10 fs-4 text-center">Sign up to get weekly Emails from our Secretary about upcoming events and learn about what the club offers!</p>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" data-bitwarden-watching="1">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" data-bitwarden-watching="1" action="http://localhost:3000/submit-form" method="post">
               <div class="form-floating mb-3">
-                <input type="name" class="form-control" id="nameInput" placeholder="name">
+                <input name="name" id="nameInput" type="name" class="form-control" placeholder="name">
                 <label for="nameInput">Name</label>
               </div>
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-                <label for="emailInput">Email Address</label>
+                <input name="email" id="emailInput" type="email" class="form-control" placeholder="name@psu.edu">
+                <label for="emailInput">PSU Email</label>
               </div>
               <button class="w-100 btn btn-lg btn-primary" type="submit" id="emailSignup">Sign Up</button>
             </form>

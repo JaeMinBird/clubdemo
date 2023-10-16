@@ -43,3 +43,16 @@ function toggleMenuAnimation() {
 // Click event listener for menu button
 const menuButton = document.querySelector('.navbar-toggler');
 menuButton.addEventListener('click', toggleMenuAnimation);
+
+// Extract data from form
+function submitForm(event) {
+  event.preventDefault(); // Prevent the form from reloading the page
+
+  // Get the form data
+  const name = document.getElementById("nameInput").value;
+  const email = document.getElementById("emailInput").value;
+
+  // Do something with the data
+  console.log("Name:", name);
+  console.log("Email:", email);
+}
