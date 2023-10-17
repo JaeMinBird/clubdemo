@@ -530,6 +530,14 @@ left: 8px;
     .stext {
       font-size:120%;
     }
+    .ctextbacker {
+        font-weight:normal;
+        font-size:120% !important;
+    }
+    .card-text-bottom {
+        font-weight:normal;
+        font-size:120% !important;
+    }
 }
 
 @media screen and (max-width: 386px) {
@@ -547,20 +555,6 @@ left: 8px;
 @media screen and (max-width: 285px) {
     .stext {
       font-size:65%;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .card-text-bottom {
-      font-weight:normal;
-      font-size:120% !important;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .ctextbacker {
-      font-weight:normal;
-      font-size:120% !important;
     }
 }
 
