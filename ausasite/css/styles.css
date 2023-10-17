@@ -116,6 +116,9 @@
       align-items:center !important;
       justify-content: center !important;
     }
+    .shifter {
+        transform: translateX(-4%) !important;
+    }
 }
 
 /*navbar icon*/
