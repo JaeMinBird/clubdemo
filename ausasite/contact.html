@@ -125,12 +125,17 @@
           <div class="col-md-10 mx-auto col-lg-5">
             <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="http://localhost:3000/submit-form" method="post" id="signUp">
               <div class="form-floating mb-3">
-                <input name="name" id="nameInput" type="text" class="form-control" placeholder="name">
-                <label for="nameInput">Name</label>
+
+                <input type="text" class="form-control" id="name" placeholder="name">
+                <label for="name">Name</label>
+
               </div>
+
               <div class="form-floating mb-3">
-                <input name="email" id="emailInput" type="email" class="form-control" placeholder="name@psu.edu">
-                <label for="emailInput">PSU Email</label>
+
+                <input type="email" class="form-control" id="email" placeholder="name@psu.edu">
+                <label for="email">PSU Email</label>
+
               </div>
               <button class="w-100 btn btn-lg btn-primary" type="submit" id="emailSignup">Sign Up</button>
             </form>
